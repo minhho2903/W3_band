@@ -161,14 +161,14 @@ html{
     line-height: 46px;
 }
 
-
+/* Slider */
 
 #slider {
     position: relative;
     margin-top: 46px;
     /* padding-top: 50% giúp chiều cao ảnh bằng 50% chiều ngang */
     padding-top: 50%;
-    background: url(/assets/image/Slider/4.5.jpg) top center / cover no-repeat;
+    background: url(/assets/image/Slider/slider1.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -470,17 +470,53 @@ html{
     margin-bottom: 12px;
 }
 
+.modal-input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
 .modal-input {
     width: 100%;
+    height: 50px;
     padding: 10px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    margin-bottom: 24px;
+    border: 2px solid #009688;
+    border-radius: 20px;
+    /* margin-bottom: 24px; */
+    transition: 0.25 ease;
+}
+
+.modal-input:focus {
+    outline: none;
+    border:2px solid #009688;
+}
+
+.input-effect {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translateY(-50%);
+    user-select: none;
+    color: #ddd;
+    /* pointer-events: none giúp phần tử bị chỉm xuống */
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+.modal-input:not(:placeholder-shown) + .input-effect,
+.modal-input:focus + .input-effect {
+    top: 0;
+    /* left: 0; */
+    padding: 0 10px;
+    /* cho màu của backround-color giống với màu nền thẻ chứa nó */
+    background-color: white;
+    /* display: inline-block; */
+    color: #009688;
 }
 
 #buy-tickets {
     width: 100%;
     border: none;
+    border-radius: 30px;
     background-color: #009688;
     padding: 18px;
     font-size: 15px;
