@@ -323,6 +323,8 @@ html{
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
+    /* height: 50px; */
 }
 
 .place-buy-btn:hover {
@@ -343,6 +345,15 @@ html{
 .contact-info i {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #1c02ef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {
@@ -380,15 +391,15 @@ html{
     text-align: center;
 }
 
-#footer .socila-list {
+#footer .social-list {
     font-size: 24px;
 }
 
-#footer .socila-list a:hover {
+#footer .social-list a:hover {
     opacity: 0.6;
 }
 
-#footer .socila-list a {
+#footer .social-list a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.4);
 }
